@@ -21,7 +21,7 @@ Once you have the service account that you want to use for Cloudbreak, make sure
 * The "Editor" role is enabled for your service account, or
 * The following APIs are enabled for your service account:
 
-    >>>>TO-DO: Need an updated list. 
+    >>>>TO-DO: Need an updated list. added to jira
     
 A user with an "Owner" role can assign roles or access rules to service accounts from **IAM & Admin** > **IAM**. 
 

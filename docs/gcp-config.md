@@ -24,9 +24,7 @@ You have five options:
 
 > If creating a new subnet in an existing VPC, make sure that the new subnets that you define don't overlap with already deployed subnets in that VPC. 
 
-> If using an existing subnet, make sure that you have enough room within your network space for the new instances. The provided subnet CIDR will be ignored, but a proper CIDR range will be used.
-
->>>>TO-DO: What do you mean here? How is the second sentence related to the first?
+> If using an existing subnet, make sure that you have enough room within your network space for the new instances. 
 
 
 #### Default Network

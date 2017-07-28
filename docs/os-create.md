@@ -5,7 +5,7 @@
 | **Connector Variant** | Select "HEAT" or "NATIVE".|
 {!docs/common/cluster-basic-conf2.md!}
 
-    >>>>TO-DO: what is Connector Variant?
+    >>>>TO-DO: what is Connector Variant? Connector variant= If the platform supports more than one kind of provisioning like openstack. Openstack supports provisioning from templates like cloudformation template on amazon, and provisioning vms one by one.
 
 {!docs/common/cluster-basic-net&blue.md!}
 {!docs/common/cluster-basic-review.md!}

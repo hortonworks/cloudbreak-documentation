@@ -174,8 +174,8 @@ The following is an example of `openstack-zone.json` containing two regions and 
 }
 </pre>
 
->>>>TO-DO: Restart of what is needed? 
->>>>TO-DO: Can this be done later after cbd start? 
+>>>>TO-DO: Restart of what is needed? restart of cbd
+>>>>TO-DO: Can this be done later after cbd start? yes but then you should restart the application if you are using a different configuration
 
 
 ### Launch Cloudbreak Deployer 

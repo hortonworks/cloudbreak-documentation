@@ -17,7 +17,7 @@ There are three ways to install and run Cloudbreak Shell:
 * From the Docker Image
 * Build From Source
 
->>>>TO-DO: What are the advantages of the other two methods (using prepared docker image and building from the source)?
+>>>>TO-DO: What are the advantages of the other two methods (using prepared docker image and building from the source)? If you using the last two method then you are able to connect from your local machine to a remote vm
 
 #### From the Cloudbreak VM
 
@@ -35,13 +35,11 @@ If you would like to use Cloudbreak Shell from your local machine:
 
 #### From the Docker Image
 
-You can find the docker image and its documentation [here](https://github.com/sequenceiq/docker-cb-shell).
-
->>>>TO-DO: Add from the github doc? Is this still valid? 
+You can find the docker image and its documentation [here](https://github.com/hortonworks/docker-cloudbreak-shell).
 
 #### Build From Source
 
->>>>TO-DO: Add from the old doc. Is this still valid? 
+>>>>TO-DO: Add from the old doc. Is this still valid? the repository url change because the project is now under hwx
 
 >>>>TO-DO: Include documentation from:
 

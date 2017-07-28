@@ -40,8 +40,8 @@ In order to differentiate launched instances, you can optionally define custom t
     ```export CB_AWS_CUSTOM_CF_TAGS=tag1:value1,tag2:value2,tag3:value3```
     
 
->>>>TO-DO: What exactly gets tagged? 
->>>>TO-DO: This configuration is available on AWS only??
+>>>>TO-DO: What exactly gets tagged? every resource which is deployed on AWS
+>>>>TO-DO: This configuration is available on AWS only?? yes
 
 ### Cloud Provider Documentation
 

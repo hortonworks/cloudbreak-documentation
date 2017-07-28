@@ -51,4 +51,4 @@ proxy=http://10.0.0.133:3128
 ENDOF</pre>
 
 
->>>>TO-DO: Move Shell commands to the Cb Shell doc. 
+>>>>TO-DO: Move Shell commands to the Cb Shell doc. I think the cb shell doc should be part of this documentation
