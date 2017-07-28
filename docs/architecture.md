@@ -8,7 +8,7 @@ Cloudbreak deployer includes the following components:
 | Component | Description |
 |---|---|
 | **Cloudbreak Application** | Cloudbreak application is built on the foundation of cloud provider APIs and Apache Ambari. | 
-| **Uluwatu** | This is Cloudbreak web UI, which can be used to create, manage, and monitor clusters. |
+| **Cloudbreak web** | This is Cloudbreak web UI, which can be used to create, manage, and monitor clusters. |
 | **Cloudbreak Shell** | This is Cloudbreak's command line tool, which can be used to create, manage, and monitor clusters. | 
 | **UAA** | This is Cloudbreak's OAuth identity server implementation, which utilizes UAA. |
 | **Sultans** | This is Cloudbreak's user management system. | 
@@ -27,9 +27,8 @@ Cloudbreak deployer includes the following system-level containers:
 
 * Consul: Cloudbreak service registry  
 * Registrator: automatically registers/unregisters containers with consul 
-
->>>>TO-DO: Is this correct? 
- 
+* Database: Database container for cloudbreak, autoscaling, and uaa
+* Traefik: Proxy container 
 
 ### Cloudbreak Application Architecture 
 

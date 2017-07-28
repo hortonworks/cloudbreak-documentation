@@ -39,8 +39,6 @@ In addition, if you have any clusters running, you must update them using the fo
 
 ### Update Existing Clusters
 
->>>>TO-DO: is this still correct?
-
 Upgrading from version 1.4.0 to the newest version does not require any manual modification from the users.
 
 Upgrading from version 1.3.0 to the newest version requires that you update existing clusters. To update existing clusters, run the following commands on the `cbgateway` node of the cluster:

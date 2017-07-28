@@ -14,12 +14,12 @@
 | **Use dedicated instances** | ???? |
 {!docs/common/cluster-adv-2.md!}
 
->>>>TO-DO: What are dedicated instances?
+>>>>TO-DO: What are dedicated instances? https://aws.amazon.com/ec2/purchasing-options/dedicated-instances/
 
 {!docs/common/cluster-adv-3.md!} 
 | **Instance Profile** | <p>The following options are available:<ul><li>Disable Instance Profile attaching by default</li><li>Create Instance Profile and attach to the instance</li><li>Define existing Instance Profile and attach to the instances</li></ul></p> |
 
->>>>TO-DO: What do the Instance Profile options do?
+>>>>TO-DO: What do the Instance Profile options do? attaching an instance profile to a machine which can connect to amazon api
 
 {!docs/common/cluster-adv-4.md!}
 
