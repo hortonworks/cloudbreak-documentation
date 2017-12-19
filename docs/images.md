@@ -210,7 +210,7 @@ Once you have registered your image catalog, you can use your custom image(s) wh
 
 #### Select a Custom Image in Cloudbreak UI
 
-Perform these steps in the advanced **General Configuration** section of the create wizard wizard.
+Perform these steps in the advanced **General Configuration** section of the create wizard.
 
 **Steps**  
 
@@ -230,45 +230,48 @@ To use the custom image when creating a cluster via CLI, perform these steps.
 
 1. Obtain the image ID. For example: 
 
-    <pre>cb imagecatalog images aws --imagecatalog custom-catalog
-[
-  {
-    "Date": "2017-10-13",
-    "Description": "Cloudbreak official base image",
-    "Version": "2.5.1.0",
-    "ImageID": "44b140a4-bd0b-457d-b174-e988bee3ca47"
-  },
-  {
-    "Date": "2017-11-16",
-    "Description": "Official Cloudbreak image",
-    "Version": "2.5.1.0",
-    "ImageID": "3c7598a4-ebd6-4a02-5638-882f5c7f7add"
+    <pre>cb imagecatalog images aws --imagecatalog custom-catalog</pre>
+```json
+  [
+    {
+      "Date": "2017-10-13",
+      "Description": "Cloudbreak official base image",
+      "Version": "2.5.1.0",
+      "ImageID": "44b140a4-bd0b-457d-b174-e988bee3ca47"
+    },
+    {
+      "Date": "2017-11-16",
+      "Description": "Official Cloudbreak image",
+      "Version": "2.5.1.0",
+      "ImageID": "3c7598a4-ebd6-4a02-5638-882f5c7f7add"
+    }
+  ]
+```
+
+2. When preparing a CLI JSON template for your cluster, set the "imageCatalog" parameter to the image catalog name that you would like to use, and set the "imageId" parameter to the uuid of the image from that catalog that you would like to use. For example: 
+```json
+    ...
+    "name": "aszegedi-cli-ci",
+    "network": {
+      "subnetCIDR": "10.0.0.0/16"
+    },
+    "orchestrator": {
+      "type": "SALT"
+    },
+    "parameters": {
+      "instanceProfileStrategy": "CREATE"
+    },
+    "region": "eu-west-1",
+    "stackAuthentication": {
+      "publicKeyId": "seq-master"
+    },
+    "userDefinedTags": {
+      "owner": "aszegedi"
+    },
+    "imageCatalog": "custom-catalog",
+    "imageId": "3c7598a4-ebd6-4a02-5638-882f5c7f7add"
   }
-]</pre>
-
-2. When preparing a CLI JSON template for your cluster, set the "ImageCatalog" parameter to the image catalog that you would like to use, and set the "ImageId" parameter to the uuid of the image from that catalog that you would like to use. For example: 
-
-    <pre>...
-  "name": "aszegedi-cli-ci",
-  "network": {
-    "subnetCIDR": "10.0.0.0/16"
-  },
-  "orchestrator": {
-    "type": "SALT"
-  },
-  "parameters": {
-    "instanceProfileStrategy": "CREATE"
-  },
-  "region": "eu-west-1",
-  "stackAuthentication": {
-    "publicKeyId": "seq-master"
-  },
-  "userDefinedTags": {
-    "owner": "aszegedi"
-  },
-  "imageCatalog": "custom-catalog",
-  "imageId": "3c7598a4-ebd6-4a02-5638-882f5c7f7add"
-}</pre>
+```
 
 **Related Links**  
 [CLI Reference](cli-reference.md)  
