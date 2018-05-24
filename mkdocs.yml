@@ -1,9 +1,12 @@
 site_name: Cloudbreak 
-site_favicon: /images/favicon.png
+#site_favicon: /images/favicon.png
 site_url: http://hortonworks.github.io/cloudbreak-documentation/
 repo_url: https://github.com/hortonworks/cloudbreak-documentation
 theme_dir: mkdocs_theme
 theme_dir: custom_cinder
+#theme:
+#    name: mkdocs
+#    custom_dir: custom_cinder
 extra_css:
   - css/extra.css
 dev_addr: 0.0.0.0:8000
@@ -53,7 +56,8 @@ pages:
         - Configure autoscaling: autoscaling.md 
         - Register external database: external-db.md  
         - Register external authentication source: external-ldap.md  
-        - Register proxy configuration: external-proxy.md  
+        - Register proxy configuration: external-proxy.md
+        - Use custom hostnames based on DNS: custom-hostname.md
       - Advanced Cloudbreak options:  
         - Manage Cloudbreak credentials: cb-credentials.md 
         - Move Cloudbreak instance: cb-migrate.md 
