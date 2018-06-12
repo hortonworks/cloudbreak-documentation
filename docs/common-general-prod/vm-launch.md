@@ -52,7 +52,7 @@ cbd generate</pre>
 
 5. Start the Cloudbreak application by using the following commands:
 
-    <pre>cbd pull --parallel
+    <pre>cbd pull-parallel
 cbd start</pre>
 
     This will start the Docker containers and initialize the application. The first time you start the Cloudbreak app, the process will take longer than usual due to the download of all the necessary docker images.

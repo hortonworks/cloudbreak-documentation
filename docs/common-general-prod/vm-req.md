@@ -65,7 +65,9 @@ sed -i 's/SELINUX=enforcing/SELINUX=disabled/g'
 
     <pre>sestatus | grep -i mode
 Current mode:                   permissive
-Mode from config file:          permissive</pre>
+Mode from config file:          enforcing</pre>
+
+    > After machine reboot all should be `permissive`. Reboot doesn't really need, because the `setenforce 0` command put SELinux into Permissive mode the `sed` provides it is going to be in disabled mode after a reboot based on the config file.
 
 [Comment]: <> (Also we can use the "getenforce" command to get the mode of SELinux.)
     
@@ -76,24 +78,15 @@ Perform these steps to install Docker.
 
 **Steps**    
 
-4. Create Docker repo:
-
-    <pre>cat > /etc/yum.repos.d/docker.repo <<"EOF"
-[dockerrepo]
-name=Docker Repository
-baseurl=https://yum.dockerproject.org/repo/main/centos/7
-enabled=1
-gpgcheck=1
-gpgkey=https://yum.dockerproject.org/gpg
-EOF</pre>
-
-[Comment]: <> (Annamaria mentioned in https://hortonworks.jira.com/browse/BUG-104824 that this step is not required?)
-
 2. Install Docker service:
 
-    <pre>yum install -y docker-engine-1.13.1 docker-engine-selinux-1.13.1
+    <pre>yum install -y docker
 systemctl start docker
 systemctl enable docker</pre>
+
+    > **Note:** The minimum Docker version should be 1.13.1. If you are using an older image that comes with an older Docker version, please upgrade for 1.13.1 or a newer one.
+
+[Comment]: <> (Annamaria mentioned in https://hortonworks.jira.com/browse/BUG-104824 that this step is not required?)
 
 3. Check the Docker Logging Driver configuration:
 
